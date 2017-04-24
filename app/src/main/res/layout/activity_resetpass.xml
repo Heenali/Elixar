@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/colorgradient"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot password"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:fillViewport="true"
+        android:isScrollContainer="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/ss"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_bg"
+                android:id="@+id/total_layouts"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:id="@+id/mobileni_title"
+                    android:layout_toRightOf="@+id/hometype_icon"
+                    android:layout_toEndOf="@+id/hometype_icon" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_bg"
+                android:id="@+id/mno_layout"
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="9dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/round_edittext"
+                    android:textSize="15dp"
+                    android:hint=""
+                    android:inputType="text"
+                    android:id="@+id/pass_edittext"
+                    android:layout_toRightOf="@+id/hometype_icon"
+                    android:layout_toEndOf="@+id/hometype_icon"
+                    android:layout_weight="0.15" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_bg"
+                android:id="@+id/total_layout"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="conform Password"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:id="@+id/total_title"
+                    android:layout_toRightOf="@+id/hometype_icon"
+                    android:layout_toEndOf="@+id/hometype_icon" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_bg"
+                android:id="@+id/promocode_layout"
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="9dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/round_edittext"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    android:hint=""
+                    android:id="@+id/conpass_edittext"
+                    android:layout_toRightOf="@+id/hometype_icon"
+                    android:layout_toEndOf="@+id/hometype_icon"
+                    android:layout_weight="0.15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner_bg"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="0.17">
+                <TextView
+                    android:id="@+id/tvreset"
+                    style="@style/Button.Green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/link_forgot"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/buttonshape"
+                    android:clickable="true"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:text="Submit"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

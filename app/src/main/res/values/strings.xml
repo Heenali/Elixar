@@ -1,0 +1,111 @@
+<resources>
+
+    <string name="tab1">Search</string>
+    <string name="tab2">Appointment</string>
+    <string name="tab3">MedicleId</string>
+    <string name="tab4">Notification</string>
+    <string name="tab5">Setting</string>
+    <string name="app_name">Elixar</string>
+    <string name="app_version">1.0.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="forget_link">Forget password?</string>
+    <string name="signup_link">No account yet? Register Now</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="login_link">Already a member? Login</string>
+    <string name="title_activity_business_profile">Search Doctor</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_trade_light_maps">Map</string>
+    <string name="title_activity_map_place_picker">Map Place Picker</string>
+    <string name="title_activity_verification"><font color="white">Verification</font></string>
+    <string name="title_activity_business_time">Business Time</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_edit_business_profile">Edit Business</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_my_business">Search Doctor</string>
+    <string name="title_activity_edit_business_time">Edit Business Time</string>
+    <string name="title_activity_edit_address">Edit Address</string>
+    <string name="title_activity_business_preview">Business Preview</string>
+ <string name="formatted_place_data">
+        Name: %1$s\nAddress: %2$s\nPhone: %3$s\nWebsite: %4$s\nRating: %5$s\nId: %6$s\n
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_deals">Appoitment</string>
+    <string name="title_activity_notifications">Notifications</string>
+    <string name="title_activity_account">My Account</string>
+    <string name="title_activity_post_an_offer">Post An Offer</string>
+    <string name="title_activity_offers">Offers</string>
+    <string name="title_activity_update_an_offer">Update An Offer</string>
+
+    <string name="msg_please_wait_loading">Please wait...</string>
+    <string name="ok">Ok</string>
+    <string name="msg_error_sending">Error While Sending Data</string>
+    <string name="msg_verification">You are signup successfully and we send your account verification code to your register email.</string>
+    <string name="title_no_internet">No Internet</string>
+    <string name="msg_no_internet">Please check your internet connection and try again</string>
+    <string name="title_activity_reviews">Reviews</string>
+    <string name="title_activity_reviews_details">Reviews Details</string>
+    <string name="gallery">Gallery</string>
+    <string name="alert_upload_image_from">Upload Image From</string>
+    <string name="camera">Camera</string>
+    <string name="open_24_hours">Open 24 Hours</string>
+
+    <!--Dynamic Permision Alert -->
+    <string name="msg_dialog_no_storage_permission">Please grant Storage permission from settings.</string>
+    <string name="msg_dialog_no_location_permission">Please grant Location permission from settings.</string>
+    <string name="callback_add_business">Add Business</string>
+    <string name="callback_home">Home</string>
+    <string name="search_location">Search Location</string>
+    <string name="google_direction_key">AIzaSyC3bcwOJxo0Uxi0zTX_yZnqW3zoz0wo2EQ</string>
+    <string name="progress_dialog_message">Please Wait</string>
+    <string name="alert_message_data_success">Successfully data sent</string>
+    <string name="update">Update</string>
+
+    <string name="no_data">No Data Available</string>
+    <string name="reload">Reload</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="address">Address</string>
+    <string name="not_available">Not Available</string>
+    <string name="version">Version</string>
+    <string name="versionName">1.0.0</string>
+    <string name="loading_url_message">Please wait...\nLoading Page</string>
+    <string name="feedback">Feedback</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="terms_link">http://tradlight.com/terms</string>
+    <string name="review_amp_favorite"><![CDATA[Review & Favorite]]></string>
+    <string name="stay_with_deals">Stay with deals</string>
+    <string name="analytics">Analytics</string>
+    <string name="no_notofication_found">You don\'t have any notifications</string>
+    <string name="delete_notification">Delete Notification</string>
+    <string name="delete_this_notification_message">Are you sure you want to delete this Notification?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="sender_id">1083763379842</string>
+
+    <string name="alert_entered_deal_title">Please enter title of deal.</string>
+    <string name="alert_entered_deal_description">Please enter description of deal.</string>
+    <string name="alert_entered_deal_description_limit">Please enter description of deal within 1500 character.</string>
+    <string name="alert_enter_deal_url_empty">Please enter Business URL of deal.</string>
+    <string name="alert_enter_deal_valid_url">Please enter valid Business URL of deal.\n(ex: http://www.google.com)</string>
+    <string name="alert_select_deal_date">Please select expiry date of deal.</string>
+    <string name="msg_please_wait_loading_location">Please wait...\\nAcquiring for your current location</string>
+    <string name="title_activity_message">Message</string>
+
+    <string name="google_maps_key">AIzaSyBEhmAvTSnHSDqnJ45I32Yxdn2iGQhpHdM</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+</resources>

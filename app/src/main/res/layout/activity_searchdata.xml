@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:id="@+id/back_layout"
+        android:background="@drawable/colorgradient">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/backbtn" />
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Appoitment"
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/filter_unselected"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/map"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/cardview_light_background"
+            android:background="@drawable/mapimg"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:layout_marginRight="30dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/funcinalty_layoutj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/back_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:background="@drawable/colorgradient"
+        android:paddingTop="5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchView_text"
+            android:elevation="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:hint="Select Your Place"
+            android:layout_weight="0.90"
+            android:background="@drawable/buttonround"
+            >
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_datewise"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/back_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:background="@color/gray_ea"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:background="@color/gray_ea"
+            android:orientation="horizontal"
+            android:id="@+id/prevMonth">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_arrow"
+                android:id="@+id/text1"/>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".60"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:background="@color/gray_ea"
+            android:orientation="horizontal" >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="10th January"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:layout_gravity="left|center"
+                android:gravity="left"
+                android:ellipsize="end"
+                android:textColor="@color/app_theme_color"
+                android:id="@+id/currentMonth"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:background="@color/gray_ea"
+            android:orientation="horizontal"
+            android:id="@+id/nextMonth">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrow"
+                android:id="@+id/right_side"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/layout_datewise"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listView_notification"
+            android:layout_gravity="center_vertical"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="0.7dp"
+            android:layout_weight="1" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_plus_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp" />
+    <Button
+        android:id="@+id/selectedDayMonthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" >
+    </Button>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/calendarheader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/calendar"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7" >
+    </GridView>
+</RelativeLayout>

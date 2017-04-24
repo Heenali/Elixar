@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_background"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colorgradient"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="Elixar"
+            android:layout_gravity="center"
+            android:textColor="@color/title"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:background="@drawable/pre_search_unselected"
+            android:textSize="14sp"
+            android:layout_weight="0.10"
+            android:layout_marginRight="15dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="443dp"
+        android:orientation="vertical"
+        android:background="@drawable/home_background"
+        android:visibility="visible"
+        android:padding="10dp"
+        android:layout_weight="0.87">
+
+
+        <LinearLayout
+            android:id="@+id/layout_doctortype"
+            android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/doctor"
+                android:id="@+id/imageView2"
+                android:layout_weight="0.18" />
+
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text=" Select Doctor Type"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/downarrow"
+                android:layout_weight="0.13" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Text.MenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ac" />
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/location_home"
+                android:layout_weight="0.13" />
+
+            <TextView
+                android:id="@+id/tvlocation"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Select Location"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/downarrow" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Text.MenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ac" />
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_ins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/insurance_home"
+                android:id="@+id/imageView"
+                android:layout_weight="0.13" />
+
+            <TextView
+                android:id="@+id/tvBasicInfo"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="Select Insurance Card"
+                android:textSize="15sp"  />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/downarrow" />
+
+        </LinearLayout>
+        <TextView
+            style="@style/Text.MenuItem"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ac" />
+
+        <LinearLayout
+            android:id="@+id/buttonbar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:weightSum="1">
+
+            <TextView
+                android:clickable="true"
+                android:id="@+id/tvSubmit"
+                android:background="@drawable/buttonred"
+                android:text="Search"
+                android:ems="10"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <include layout="@layout/custom_tabs"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

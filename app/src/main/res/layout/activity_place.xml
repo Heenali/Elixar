@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/buttonshape"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="Search Location"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/funcinalty_layoutj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:background="@drawable/colorgradient"
+
+        android:paddingTop="5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/searchView_text"
+            android:elevation="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:hint="Select Your Place"
+            android:maxLines="1"
+            android:layout_weight="0.90"
+            android:background="@drawable/buttonround"
+            >
+        </AutoCompleteTextView>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView_notification"
+        android:layout_gravity="center_vertical"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0.7dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:id="@+id/norecord">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have no Notifications"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/app_theme_color"
+            android:textAlignment="center"
+            android:id="@+id/text_login" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"></android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

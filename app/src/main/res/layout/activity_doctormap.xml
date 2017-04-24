@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity_Place" >
+
+
+
+    <com.elixar.Helper.MapWrapperLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.Activity_Place" >
+
+
+        <fragment
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/report_gray"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp" />
+
+    </com.elixar.Helper.MapWrapperLayout>
+
+    <LinearLayout
+        android:id="@+id/searchView_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/transparent" >
+
+
+        <LinearLayout
+            android:id="@+id/funcinalty_layoutjd"
+            android:layout_width="match_parent"
+            android:background="@drawable/curve_fill_bg"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:text="Button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/buttond"
+                android:padding="10dp"
+                android:background="@drawable/search_red"/>
+            <Button
+                android:id="@+id/searchView_text_text"
+                android:elevation="2dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="left|center"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:hint="Search"
+                android:textColorHint="@color/white"
+                android:maxLines="1"
+                android:layout_weight="0.90"
+                android:background="@color/transparent"
+                >
+            </Button>
+
+            <ImageView
+                android:text="Button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/button"
+                android:padding="10dp"
+                android:background="@drawable/doctor"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

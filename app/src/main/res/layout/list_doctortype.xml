@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+   >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_order_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivProfilePic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:background="@drawable/no_img"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="hfhj"
+               android:padding="10dp"
+                android:layout_toRightOf="@id/ivProfilePic" />
+
+            <TextView
+                android:id="@+id/tvdesc"
+                android:textSize="10sp"
+                android:textColor="@color/gray_7f"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvProfileName"
+                android:text="Desription Blank "
+                android:layout_toRightOf="@id/ivProfilePic" />
+
+            <TextView
+                android:id="@+id/tvdatetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gggggg"
+                android:textSize="10sp"
+                android:textColor="@color/gray_7f"
+                android:textAlignment="textEnd"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/ivProfilePic"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/ivProfilePic" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

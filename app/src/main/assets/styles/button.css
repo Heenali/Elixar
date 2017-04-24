@@ -1,0 +1,8 @@
+/* Button - We only change the 'pressed' state */
+.myButton:pressed {
+	background-color: url(boom.png);
+	top: 0px;
+	z-index: 999;
+	right: 0px;
+	position: fixed;
+}

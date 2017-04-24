@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:weightSum="2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/title_layout"
+        android:background="@drawable/colorgradient"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_img"
+            android:scaleType="fitXY"
+            android:id="@+id/image"
+            android:contentDescription="Main Image"
+            android:padding="1dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image_border"
+            android:contentDescription="Image Border"
+            android:padding="0dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="image"
+            android:clickable="true"
+            android:id="@+id/select_btn"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/edit_states"
+            android:src="@drawable/ic_action_edit"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.25"
+        >
+        <TextView
+            android:id="@+id/tvuplode"
+            style="@style/Button.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/link_forgot"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonshape"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:ems="10"
+            android:text="Uploding"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

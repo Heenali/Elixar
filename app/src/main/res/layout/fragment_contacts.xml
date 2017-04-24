@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center|center"
+        android:background="@drawable/colorgradient"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Medical Report"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:id="@+id/main_linear"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/Text.MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_e8" />
+
+
+            <LinearLayout
+                android:id="@+id/llAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/heart"
+                    android:id="@+id/imageView2"
+                    android:layout_weight="0.13" />
+
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    style="@style/Text.MenuItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Primary"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/downarrow"
+                    android:layout_weight="0.13" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Text.MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_e8" />
+            <LinearLayout
+                android:id="@+id/llAddBusiness"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/heart"
+                    android:layout_weight="0.13" />
+
+                <TextView
+                    android:id="@+id/tvAddBusiness"
+                    style="@style/Text.MenuItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Address"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/downarrow"
+                    android:layout_weight="0.13" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llBusinessPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <TextView
+                style="@style/Text.MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_e8" />
+            <LinearLayout
+                android:id="@+id/llBasicInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/heart"
+                    android:id="@+id/imageView"
+                    android:layout_weight="0.13" />
+                <TextView
+                    android:id="@+id/tvBasicInfo"
+                    style="@style/Text.MenuItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Contact"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    android:src="@drawable/downarrow"
+                    android:layout_weight="0.13" />
+            </LinearLayout>
+            <TextView
+                style="@style/Text.MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_e8" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <include layout="@layout/custom_tabs"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

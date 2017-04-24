@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/app_theme_color"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Appoinment"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/backbtn" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/doctormap"
+            android:background="@drawable/mapview"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/id_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:gravity="center|center"
+                        android:background="@color/white"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal" >
+
+
+                        <com.meg7.widget.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/pro"
+                            android:id="@+id/imag" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/datetime_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".50"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="0dp"
+                        android:gravity="left|top"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:text=" Dr Rajat Tokas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc1"
+                            android:textColor="@color/black"
+                            android:textAllCaps="true"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:padding="1dp" />
+
+
+                        <TextView
+                            android:text="Mumbai Area coloni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc2"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:textSize="10sp"
+                            android:padding="2dp" />
+
+                        <TextView
+                            android:text="MBBS (Mast of Bussiness Administration)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc3"
+                            android:singleLine="true"
+                            android:textSize="9sp"
+                            android:textColor="@color/black"
+                            android:padding="2dp" />
+
+                        <TextView
+                            android:text="2012-56231"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc4"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:padding="2dp" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar1"
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/datetime_layout1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".20"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center|center"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/heart"
+                            android:id="@+id/location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Save"
+                            android:singleLine="true"
+                            android:textSize="10dp"
+
+                            android:gravity="center|center"
+                            android:ellipsize="end"
+                            android:textColor="#B2B2B2"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+             <LinearLayout
+                android:id="@+id/layout46"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:background="@color/app_theme_color"
+                android:weightSum="1">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/id_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:gravity="center|center"
+                        android:background="@color/white"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:orientation="horizontal" >
+
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/hospital"
+                            android:id="@+id/imag_hospital" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/datetime_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".50"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="0dp"
+                        android:gravity="left|top"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:text="Mount Sinai Doctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc1"
+                            android:textColor="@color/black"
+                            android:textAllCaps="true"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:padding="1dp" />
+
+
+                        <TextView
+                            android:text="Mumbai Area coloni"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc2"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:textSize="10sp"
+                            android:padding="2dp" />
+
+                        <TextView
+                            android:text="MBBS (Mast of Bussiness Administration)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc3"
+                            android:singleLine="true"
+                            android:textSize="9sp"
+                            android:textColor="@color/black"
+                            android:padding="2dp" />
+
+                        <TextView
+                            android:text="2012-56231"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/desc4"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:padding="2dp" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar1"
+                            style="@style/customRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_centerHorizontal="true"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/datetime_layout1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".20"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center|center"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/call"
+                            android:id="@+id/call" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Call"
+                            android:singleLine="true"
+                            android:textSize="10dp"
+
+                            android:gravity="center|center"
+                            android:ellipsize="end"
+                            android:textColor="#B2B2B2"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:paddingBottom="10dp"
+                        android:background="@color/gray_ea"
+                        android:orientation="vertical"
+                        android:id="@+id/calender_layout">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/calander"
+                            android:id="@+id/calender" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="10th January"
+                            android:singleLine="true"
+                            android:textSize="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:ellipsize="end"
+                            android:textColor="@color/gray_2b"
+                            android:id="@+id/text1"/>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"/>
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:gravity="center"
+                        android:id="@id/date"
+                        android:background="@color/gray_ea"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/time"
+                            android:id="@+id/time" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="17:15"
+                            android:singleLine="true"
+                            android:textSize="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:ellipsize="end"
+                            android:textColor="@color/gray_2b"
+                            android:id="@+id/text2"/>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_tab"
+                    android:layout_width="fill_parent"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".50"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/tab1_layout"
+                        android:background="@color/app_theme_color"
+                        android:orientation="horizontal" >
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Details"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:textColor="@color/white"
+                            android:layout_gravity="left|center"
+                            android:gravity="center|center"
+                            android:ellipsize="end"
+                            android:id="@+id/tab1"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/tab2_layout"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Reviews"
+                            android:singleLine="true"
+                            android:textSize="12dp"
+                            android:layout_gravity="center|center_vertical"
+                            android:gravity="center"
+                            android:ellipsize="end"
+                            android:textStyle="bold"
+                            android:textColor="@color/app_theme_color"
+                            android:id="@+id/tab2"/>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/Text.MenuItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Why do we use it?"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    android:weightSum="1">
+
+
+                    <TextView
+                        android:id="@+id/title_sub"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:scrollbars="vertical"
+                        android:text="Award-winning, multi-discipline healthcare recruiter ID Medical was established in 2002 and has since maintained its enviable position as a market leading locum agency in the recruitment of high calibre medical staffing to both the NHS and private medical sectors. The UK’s leading provider of locum doctors, nurses, allied health professionals/health science services (AHP/HSS) and clerical staff."
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/app_theme_color"
+        android:layout_height="50dp"
+        android:id="@+id/next_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+</LinearLayout>

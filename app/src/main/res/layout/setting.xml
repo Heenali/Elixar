@@ -1,0 +1,474 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/colorgradient"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:gravity="center|center"
+            android:text="Settings"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:text="Logout"
+            android:textSize="18dp"
+            android:gravity="right|center"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:id="@+id/backbtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+
+        <LinearLayout
+            android:id="@+id/main_linear"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llBusinessDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        android:visibility="visible">
+
+
+
+                        <com.meg7.widget.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/holder_image"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:text="User"
+                            android:layout_gravity="center_vertical"
+                            style="@style/Text.MenuHeader"
+                            android:layout_width="0dip"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:padding="15dp" />
+
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/right_arrow"
+                            android:padding="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/title"
+                            android:padding="15dp"
+                            android:textColor="@color/app_theme_color"
+                            android:textSize="18sp"
+                            android:text="Profile" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <TextView
+                            style="@style/Text.MenuItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:textSize="14sp"
+                            android:text="Edit Profile" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Text.MenuItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_e8"/>
+
+                    <LinearLayout
+                        android:id="@+id/llChangePw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <TextView
+                            style="@style/Text.MenuItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                             android:textSize="14sp"
+                            android:padding="10dp"
+                            android:text="Change Password" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/title"
+                            android:padding="15dp"
+                            android:textColor="@color/app_theme_color"
+                            android:textSize="18sp"
+                            android:text="Insurance Card" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lllinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <TextView
+                            style="@style/Text.MenuItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:textSize="14sp"
+                            android:text="Edit Insurance Card" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/title"
+                            android:padding="15dp"
+                            android:textColor="@color/app_theme_color"
+                            android:textSize="18sp"
+                            android:text="Other" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/llPlayStore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <TextView
+                            style="@style/Text.MenuItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:textSize="14sp"
+                            android:text="Rate Us on Playstore" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:visibility="visible"
+                            android:id="@+id/imageView3" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Text.MenuItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_e8"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/llFeedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <TextView
+                            style="@style/Text.MenuItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:textSize="14sp"
+                            android:text="Send Feedback" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/Text.MenuItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_e8"/>
+
+                    <LinearLayout
+                        android:id="@+id/llTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <TextView
+                            style="@style/Text.MenuItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:textSize="14sp"
+                            android:text="@string/terms_amp_conditions" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/Text.MenuHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/title"
+                            android:padding="15dp"
+                            android:text="" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/eelixar_white"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvLogout"
+                            style="@style/Text.MenuItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:text="Logout" />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:padding="10dp"
+                            android:src="@drawable/right_arrow"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/Text.MenuItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_e8" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.0"/>
+
+                    <include layout="@layout/item_footer_app"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/shade_view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <include layout="@layout/custom_tabs"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+

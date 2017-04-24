@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/colorgradient"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/test_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:text="Registration"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true" />
+
+
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+                <com.meg7.widget.CircleImageView
+                    android:id="@+id/propic"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:background="@drawable/ic_profile"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                   />
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="50dp"
+                    android:id="@+id/addimage"
+                    android:layout_height="50dp" android:src="@drawable/ic_plus_white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/propic"
+                    android:layout_alignEnd="@+id/propic" />
+
+            </FrameLayout>
+
+
+            <!--   First Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/r_et_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Last Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <EditText
+                    android:id="@+id/r_et_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:inputType="textCapWords" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Email Label -->
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <EditText
+                    android:id="@+id/r_et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <!-- Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <EditText
+                    android:id="@+id/r_et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                     />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Re-Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <EditText
+                    android:id="@+id/r_et_repassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                  />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Phone Number Label -->
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                >
+
+                <EditText
+                    android:id="@+id/r_et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                style="@style/Button.Green"
+                android:clickable="true"
+                android:id="@+id/tvSubmit"
+                android:layout_below="@+id/link_forgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/buttonshape"
+                android:text="Registration"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:elevation="2dp"
+                android:ems="10"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:id="@+id/r_link_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/login_link"
+                android:textSize="16dip"
+                />
+
+        </LinearLayout>
+</ScrollView>
+    </LinearLayout>

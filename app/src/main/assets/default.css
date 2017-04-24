@@ -1,0 +1,103 @@
+/* Button - We only change the 'pressed' state */
+.myButton{
+	background-color: url(boom.png);
+	top: 0px;
+	z-index: 999;
+	right: 0px;
+	position: fixed;
+	
+	top: 0px;
+	z-index: 999;
+	right: 0px;
+	position: fixed;
+	
+}
+.detail_right h3 {
+  color: #696969;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: 'open_sanssemibold';
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+	.detail_right_content * 
+{
+    color: #6d6d6d ;
+    text-decoration: none;
+    
+   
+}
+.detail_right ol li em {
+    color: #707070;
+    font-family: "Roboto",sans-serif;
+      font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 0 10px;
+}
+
+
+.detail_right_content h3 {
+	
+    color: #696969;
+   font-weight: normal;
+
+    text-transform: uppercase;
+
+    font-family: 'open_sanssemibold';
+
+    font-size: 12px;
+
+    margin: 15px 0px 10px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-weight: bold;
+
+    text-transform: capitalize;
+}
+.table td
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:0px;
+    padding:0px;
+}
+.table tr
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:0px;
+    padding:0px;
+}
+
+
+.table  
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:0px;
+    padding:0px;
+}
+
+
+.tweet-thumb 
+{
+    float: left;
+    margin: 0px;
+}
+.tweet-content
+ {
+
+    margin-left: 65px;
+
+    min-height: 47px;
+}
+.tweet-content h6 
+{
+
+    margin-bottom: 2px;
+}
+
+

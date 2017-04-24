@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="left|center"
+        android:background="@drawable/colorgradient"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/test_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Location"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/backbtn" />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/funcinalty_layoutj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/colorgradient">
+
+        <Button
+            android:id="@+id/searchView_text_text"
+            android:elevation="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:gravity="left|center"
+            android:hint="Select Your new Place"
+            android:maxLines="1"
+            android:layout_weight="0.90"
+            android:background="@drawable/buttonround"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/sds"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/funcinalty_layoutj2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:padding="10dp"
+        android:background="@color/gray_ea" >
+
+
+        <LinearLayout
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:gravity="center|center"
+            android:maxLines="1"
+            android:layout_weight="0.90"
+            android:background="@drawable/buttonround">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/app_theme_color"
+            android:gravity="left|center"
+            android:text="Delete Current Location"
+            android:hint="Delete Current Location"
+            android:maxLines="1"
+            android:layout_weight="0.90"
+            android:background="@drawable/buttonround"  />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView4"
+                android:gravity="right|center"
+                android:background="@drawable/location_home"
+                android:layout_alignRight="@+id/delete"
+                android:layout_alignEnd="@+id/delete" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/nearlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Explore these Popular Areas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:id="@+id/nearlocation_text"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:gravity="left"
+            android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+        <HorizontalScrollView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:orientation="horizontal"
+            android:background="@color/gray_ea"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/container_nearlocation"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@color/gray_ea"
+                android:layout_height="wrap_content">
+
+
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/dd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Currently Searching Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_name"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:gravity="left"
+            android:layout_weight="1" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:background="@color/gray_ea"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
