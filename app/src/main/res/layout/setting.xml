@@ -81,15 +81,18 @@
                         android:padding="15dp"
                         android:visibility="visible">
 
-
-
-                        <com.meg7.widget.CircleImageView
+                        <com.github.siyamed.shapeimageview.CircularImageView
                             android:id="@+id/profile_image"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/no_img"
                             android:layout_gravity="center"
-                            android:src="@drawable/holder_image"
-                            />
+                            app:siBorderColor="@color/colorPrimary"
+                            app:siBorderWidth="2dp" />
+
+
                     </LinearLayout>
 
                     <LinearLayout

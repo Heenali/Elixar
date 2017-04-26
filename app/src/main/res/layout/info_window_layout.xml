@@ -14,12 +14,19 @@
         android:gravity="top|center"
         android:padding="5dp">
 
-        <com.meg7.widget.CircleImageView
-        android:id="@+id/ivProfilePic"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/pro"
-        android:layout_marginRight="16dp" />
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_img"
+            android:layout_marginRight="16dp"
+            app:siBorderColor="@color/colorPrimary"
+            app:siBorderWidth="2dp" />
+
+
+
     </RelativeLayout>
 
     <LinearLayout
